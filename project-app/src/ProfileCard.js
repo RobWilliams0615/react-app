@@ -1,8 +1,10 @@
-function ProfileCard() {
+function ProfileCard({ title, username }) {
+  // console.log(title, username);
   return (
     <div className="test-div">
       <img />
-      <h3>Card info here</h3>
+      <h1>{title}</h1>
+      <h3>{username}</h3>
     </div>
   );
 }
