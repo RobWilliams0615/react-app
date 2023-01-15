@@ -1,10 +1,20 @@
-function ProfileCard({ title, username, image }) {
+function ProfileCard({ title, username, image, content }) {
   // console.log(title, username);
   return (
-    <div className="test-div">
-      <img src={image} alt="bot logo" />
-      <h1>{title}</h1>
-      <h3>{username}</h3>
+    <div className="card">
+      <div className="card-image">
+        <figure className="image is-1by1">
+          <img src={image} alt="bot logo" />
+        </figure>
+      </div>
+
+      <div className="card-content">
+        <div className="media-content">
+          <p className="title is-4">{title}</p>
+          <p className="subtitle is-6">{username}</p>
+        </div>
+        <div className="content">{content}</div>
+      </div>
     </div>
   );
 }
